@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    background: linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+.container{
+    margin: 129px auto;
+    padding: 0 16px;
+    display: block;
+    max-width: 1000px;
+}
+.faq-accordian{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 30px;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -550px -267px;
+}
+.faq-accordian .left{
+    width: 50%;
+    position:relative;
+    background-image: url(../images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -77px center;
+    height: 500px;
+}
+.faq-accordian .left .box-image{
+  
+    position: absolute;
+    bottom: 100px;
+    left: -100px;
+}
+
+.faq-accordian .right{
+    width: 50%;
+}
+.faq-accordian .right h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.69px;
+    font-family: 'Kumbh Sans';
+    color: #1E1F36;
+    padding: 65px 0 30px 12px;
+}
+.faq-accordian .right .faq-text{
+    padding: 0 40px 40px 0;
+}
+.faq-accordian .right li{
+    list-style: none;
+    cursor: pointer;
+}
+.faq-accordian .right li .question-strip{
+    margin: 16px;
+font-size: 14px;
+border-bottom: 1px solid #E8E8EA;
+display: flex;
+justify-content: space-between;
+}
+ .question-strip span .border{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #E8E8EA;
+    margin: 18px;
+}
+.question-strip .fa-solid {
+    color: #F47B56;
+    font-size: 14px;
+    padding: 16px;
+}.faq-accordian .right li .question{
+    font-size: 14px;
+    line-height: 17.36px;
+    font-weight: 400;
+    font-family: 'Kumbh Sans';
+    color: #4B4C5F;
+    padding: 18px 0 16px 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:767px) {
+    .faq-accordian{
+        display:flex;
+        flex-direction:column;
+        position: relative;
+        background-image: url(../images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 0px;
+    }
+    .faq-accordian .left{
+        width: 100%;
+        background-image: url(../images/illustration-woman-online-mobile.svg);
+        position: absolute;
+        background-position: 40% top;
+    top: -110px;
+    height: 200px;
+    }
+    .faq-accordian .right{
+        width: 100%;
+    }
+    .faq-accordian .left .box-image{
+        display: none;
+    }
+    .faq-accordian .right h1{
+        padding: 125px 0 30px 0px;
+    text-align: center;
+    }
+    .faq-accordian .right .faq-text {
+        padding: 0 0px 40px 0;
+    }
+
+
+
+    
+}
