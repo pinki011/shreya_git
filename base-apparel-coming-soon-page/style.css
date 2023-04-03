@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(135deg,hsl(0, 0%, 100%),  hsl(0, 100%, 98%));
+}
+.container{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;  
+}
+
+.bg-mobile{
+  display: none;
+}
+
+.left{
+  width:60%;
+  background: url(./images/bg-pattern-desktop.svg) no-repeat center center/ cover;
+  padding: 40px 120px;
+  margin: 0 auto;
+}
+
+.logo{
+  margin: 20px 0;
+}
+.left-text{
+  max-width: 450px;
+}
+
+.left-text h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight:600;
+  letter-spacing: 17.32px;
+  line-height: 71px;
+  margin-top: 60px;
+  color: #423A3A;
+}
+
+.left-text h1 span{
+  color:hsl(0, 36%, 70%);
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.left-text p{
+  color: hsl(0, 36%, 70%);
+  line-height: 1.5;
+  font-size: 16px;
+  font-style:normal;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: 'Josefin Sans';
+  margin: 40px auto;
+  padding-right: 24px; 
+}
+
+input[type="email"]{
+  padding:15px 20px;
+  width: 445px;
+  height: 56px;
+  border-radius: 50px;
+  border: 1px solid  #CE9898;    
+  background: transparent;
+}
+
+input:focus{
+  border: 2px solid hsla(0, 36%, 70%, 0.5);
+  outline: none;
+}
+
+input::placeholder{
+  color: #CE9898;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+}
+
+.form-wrap{
+  position: relative;
+}
+
+button[type="submit"]{
+  display: inline-block;
+  position: absolute;
+  top:0;
+  right: -6px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  width: 100px;
+  height:56px;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 5px 7px hsla(0, 2%, 55%,0.6) ;
+}
+
+button[type="submit"]:hover{
+  background:hsl(0, 80%, 86%) ;
+  cursor: pointer;
+}
+
+.right{
+  background: url(./images/hero-desktop.jpg) no-repeat ;
+  width:40%; 
+  background-size: cover;
+  background-position: center center;   
+    
+}
+@media (max-width:1140px) {
+    input[type="email"]{
+        padding:15px 20px;
+        width: 330px;
+        height: 56px;
+        border-radius: 50px;
+        border: 1px solid  rgba(100, 90, 90, 0.5);    
+        background: transparent;
+      }
+    button[type="submit"]{
+        display: inline-block;
+        position: absolute;
+        top:0;
+        right: 5%;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        width: 100px;
+        height:56px;
+        padding: 15px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        box-shadow: 2px 5px 7px hsla(0, 2%, 55%,0.6) ;
+      }
+
+}
+@media (max-width:980px) {
+  input[type="email"]{
+    width: 100%;
+  }
+  button[type="submit"]{
+    right: 0%;
+  }
+  
+}
+
+@media(max-width:768px){
+  .container{
+      flex-direction: column;
+  }
+  .left, .right{
+      width: unset;
+  }
+  .left {
+      padding: 32px;
+  }
+  .logo{
+      margin: unset;
+      width: 100px;
+  }
+  .logo img{
+    width: 100px;
+    height: 20.89px;
+  }
+  .left-text h1,
+  .left-text p{
+      text-align: center;
+  }
+  .left-text h1{
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 42px;
+      letter-spacing: 10.83px;
+  }
+  .left-text h1 span{
+    font-weight: 300;
+    font-size: 40px;
+  }
+  .left-text p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+  }
+  .bg-mobile{
+      display: block;
+      margin-right: -40px;
+      margin-left: -40px;
+      width:calc(100% + 80px);   
+      margin-top: 20px;
+  }
+  input[type="email"]{
+        width: 100%;
+        border: 1px solid #CE9898;
+  }
+  button[type="submit"]{
+      right: 0;
+      width: 79px;
+      
+  }
+}
