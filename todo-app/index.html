@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css"><!--stylesheet-->
+</head>
+
+<body>
+    <div class="todo-main"><!--main of design-->
+        <div class="todo-container">
+            <div class="wrapper">
+                <div class="head"><!--header-->
+                    <div class="heading">
+                        <h1>TODO</h1>
+                    </div>
+                    <div class="sun"><img class="theme" src="./images/icons8-sun.svg"></div>
+                </div>
+                <div class="todo"><!--todo input-->
+                    <form>
+                        <input type="text" placeholder="Create a new todo..." id="write">
+                    </form>
+                    <div class="rows">
+                        <div class="rowsinner">
+                        </div>
+                    </div>
+                    <div class="filters"><!--todo footer-->
+                        <h3 class="itemleft">0 item left</h3>
+                        <div class="controls">
+                            <span id="all" class="fill">All</span>
+                            <span id="active" class="fill">Active</span>
+                            <span id="completed" class="fill">Completed</span>
+                        </div>
+                        <h3 class="complete">Clear completed</h3>
+                    </div>
+                    <div class="phone">
+                        <div class="controls">
+                            <span id="all" class="fill">All</span>
+                            <span id="active" class="fill">Active</span>
+                            <span id="completed" class="fill">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script><!--js file-->
+</body>
+
+</html>
